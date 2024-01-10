@@ -1,0 +1,21 @@
+<script>
+    var user_s = [
+        ["Ram", 23, "MANAGER"],
+        ["Seeta", 21, "HR"]
+    ]
+    console.log("Length of Row" + user_s.length)
+    console.log("Length of Coloumn" + user_s[0].length)
+
+    document.write("<table border='20'>")
+    for (i = 0; i < user_s.length; i++) {
+        document.write("<tr>")
+
+        for (j = 0; j < user_s[i].length; j++) {
+            document.write(`<td>${user_s[i][j]}</td>`)
+
+        }
+        document.write("</tr>")
+
+    }
+    document.write("</table>")
+</script>

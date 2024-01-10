@@ -1,0 +1,29 @@
+<script>
+    class Parent
+    {
+        one()
+        {
+            document.write("<Strong> Welcome to Parent class Method One</strong><br>");
+        }
+
+        two()
+        {
+            document.write("<Strong> Welcome to Parent class Method </strong><br>");
+        }
+
+    }
+    class Child extends Parent
+    {
+        two()
+        {
+            super.two()
+            document.write("Welcome to Child class Method  <br>");
+            super.two()
+            super.one()  // Super is keyworld 
+            
+        }
+    }
+    var c = new Child;
+    //c.one();
+    c.two();
+</script>

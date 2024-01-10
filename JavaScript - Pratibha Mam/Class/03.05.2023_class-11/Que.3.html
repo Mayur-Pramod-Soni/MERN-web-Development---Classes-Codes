@@ -1,0 +1,25 @@
+<script>
+
+    // call class variable inside method 
+    
+        class Ex
+        {
+                 a = 10 ;
+                 b = 20 ;
+            // name = "Mayur"
+            Addition()
+            {
+                // name="Jai Shree Ram!"
+                var c = this.a+this.b ;
+                console.log((c));
+            }
+            Substraction()
+            {
+                var c = this.a-this.b ;
+                console.log((c));
+            }
+        }
+        var obj = new Ex();
+        obj.Addition();
+        obj.Substraction();
+    </script>

@@ -1,0 +1,20 @@
+<script>
+    class A 
+    {
+        add(a,b)
+        {
+            
+            document.write(`Add by Parent Class is ${a+b}<br>`)
+        }
+    }
+    class B extends A // class A dont write 
+    {
+        add (a,b)
+        {
+            super.add(900,100)
+            document.write(`add by child ${a+b}<br>`)   
+        }
+    }
+    var t=new B()
+    t.add(3,4)
+</script>

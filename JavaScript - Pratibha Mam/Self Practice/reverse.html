@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <script>
+      // reverse a String
+
+      // const string = "this is javascript code" ;
+      // const words = string.split(' ');
+      // let reversedWords = words.reverse();
+      // const reversedString = reversedWords.join(' ');
+      // document.write(reversedString);
+
+      // Que two
+      const arr = [2, 7, 11, 4, -2];
+      let sum = 0;
+      let newarr = [];
+      for (let i = 0; i < arr.length; i++) {
+        sum = arr[i] + sum;
+      }
+    //   document.write(sum + "\n");
+      for (let i = 0; i < arr.length; i++) {
+        newarr[i] = sum - arr[i];
+      }
+       document.write("Given Array :" + arr + "<br/>");
+       document.write("New Array :" + newarr);
+
+        // other way :----
+
+    //   const sum1 = arr.reduce((acc, val) => acc + val, 0);
+
+    //   const sumExceptIndex = arr.map((value, index) => sum1 - value);
+
+    //   console.log(sumExceptIndex);
+    //   document.write(sumExceptIndex);
+    </script>
+  </body>
+</html>

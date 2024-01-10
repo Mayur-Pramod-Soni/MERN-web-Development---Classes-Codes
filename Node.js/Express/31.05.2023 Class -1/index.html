@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Game</title>
+
+</head>
+
+<body>
+    <center>
+        <form action="" method="get" name="frm" onsubmit="return val()">
+            <table>
+                <h1>The "function" and " var" are known as:</h1>
+            <input type="radio" name="opn" value="Keywords">Keywords <br>
+            <input type="radio" name="opn" value="Data types">Data types <br>
+            <input type="radio" name="opn" value="Declaration statements">Declaration statements<br>
+            <input type="radio" name="opn" value="Prototypes">Prototypes <br>
+            <input type="submit" value="check">
+            </table>
+        </form>
+    </center>
+</body>
+<script>
+    function val() {
+        var x = document.frm.opn.value;
+        alert(x)
+        switch (x) {
+            case "Declaration statements":
+                alert("Winner")
+                break;
+
+            default:
+                alert("Failed")
+                break;
+        }
+    }
+</script>
+
+</html>

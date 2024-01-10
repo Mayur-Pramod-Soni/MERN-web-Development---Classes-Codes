@@ -1,0 +1,24 @@
+.home
+{
+    background-color: #ff9933;
+    height: 200px;
+    width: 100%;
+   
+}
+ 
+
+.about
+{
+
+    background-color: whitesmoke;
+    height: 200px;
+    width: 100%;
+
+}
+
+.contact
+{
+    background-color: green;
+    height: 200px;
+    width: 100%;
+}

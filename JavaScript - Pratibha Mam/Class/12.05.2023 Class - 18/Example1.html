@@ -1,0 +1,25 @@
+<script>
+    class Lab
+    {
+        num1 = 90 ;
+        constructor(num1) // num 1 is pass the value to constructor 
+        {
+
+            if(this.constructor == Lab )
+            {
+                throw Error("Lab is based on Student")
+            }           
+        }
+        labpara(num)
+        {
+            document.write("This is use by Student"+num)
+        }
+      
+    }
+    class Student extends Lab
+    {
+
+    }
+    var o = new Lab();
+    o.labpara(100);
+</script>

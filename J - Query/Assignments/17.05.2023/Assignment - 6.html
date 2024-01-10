@@ -1,0 +1,35 @@
+
+<!-- wap to show all records from array as name age contact from array object as tabuler formate with edit or delete button. -->
+
+<script src="https://code.jquery.com/jquery-3.7.0.js" 
+integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" 
+crossorigin="anonymous"></script>
+
+
+<center>
+    <button id="sh">Add Record</button>
+    
+    <table border="1">
+
+    </table>
+</center>
+
+<script>
+ var records=[{name:"Ram",age:"24",contact:"45216"},
+                    {name:"Raman",age:"23",contact:"875469"},
+                        {name:"Mohit",age:"22",contact:"872369"},
+                             {name:"aman",age:"26",contact:"635469"}
+                ]
+
+    $(document).ready(function(){
+        
+        $("#sh").click(function(){
+            records.forEach((e)=>{
+                $("table").append(
+                    `<tr><td>${e.name}</td><td>${e.age}</td><td>${e.contact}</td></tr>`
+                )
+            })
+        })
+
+    })
+</script>

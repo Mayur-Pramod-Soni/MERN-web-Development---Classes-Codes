@@ -1,0 +1,26 @@
+
+<!-- Promise Keyworld  Promise is a constructor
+   res and rej is keyworld which can't be changed -->
+
+<html>
+    <script>
+        var age = parseInt(prompt("Enter Age "))
+        var result = new Promise(function(res,rej){   
+            if(age>=18)
+            {
+                res("Success")
+            }
+            else
+            {
+                rej("Fail")
+            }
+        })
+        result
+        .then((data)=>{
+            document.write(data)
+        })
+        .catch((er)=>{
+            document.write(er)
+        })
+    </script>
+</html>

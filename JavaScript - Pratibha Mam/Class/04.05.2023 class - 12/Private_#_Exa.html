@@ -1,0 +1,22 @@
+<script>
+
+    class Ex2 
+    {
+        #name = "Reena" // this is private variable;
+        updatevalue(m)
+        {
+            this.#name=m;
+        }
+        accessValue()
+        {
+            return this.#name;
+        }
+    }
+    var r = new Ex2();
+    //document.write(r.name);
+    document.write(r.accessValue()+"<br>")
+    r.updatevalue("Mayur")
+    document.write(r.accessValue()+"<br>")
+
+
+</script>

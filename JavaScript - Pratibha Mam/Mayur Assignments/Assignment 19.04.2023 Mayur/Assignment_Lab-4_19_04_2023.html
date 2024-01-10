@@ -1,0 +1,26 @@
+<!-- previous and next number -->
+
+<script>
+    var n = parseInt(prompt("Enter a No : "))
+    document.write("<h3 style='color:green' >  Enter a No =", + n + "</h3>")
+
+    var m, l
+    if (n > 0) {
+        m = n - 1
+        l = n + 1
+    }
+    else if (n < 0) {
+        m = -(n - 1)
+        l = -(n + 1)
+    }
+    else {
+        m = -(n - 1)
+        l = n + 1
+    }
+
+
+    document.write("<h3 style='color:red'>Previous Value = ", + m + "</h3>")
+
+    document.write("<h3 style='color:red'>Next Value = ", + l + "</h3>")
+
+</script>

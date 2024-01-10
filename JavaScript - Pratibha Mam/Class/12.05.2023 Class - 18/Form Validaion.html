@@ -1,0 +1,22 @@
+
+
+<!-- Contact No Method Validation -->
+<form action="" method="" name="frm" onsubmit="return load()">
+    <input type="number" name="contact" required>
+    <input type="submit" value="Go">
+    <span style=" color:aqua" id="msj" ></span>
+ </form>
+
+ <script>
+    function load()
+    {
+        var n = document.frm.contact.value;
+        if(n.length<10 || n.length>10)
+        {
+            document.getElementById("msj").innerHTML="inavalid Conatact No"
+            alert("Invalid contact Number Digits ")
+            document.frm.contact.value=" return false"
+        }
+           
+    }
+ </script>

@@ -1,0 +1,11 @@
+{
+    "Mycourse":[
+        {
+                "course_name":"Java",
+                "courseicon" :"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.developer.com%2Fjava%2Fjava-versus-c%2F&psig=AOvVaw1h4cltYut_Cpi5FBaJb0vj&ust=1687076336004000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMDTnaDvyf8CFQAAAAAdAAAAABAE",
+                "course_des" : "This is Easy learn java.......",
+                "course_url" : ""
+
+    }
+]
+}

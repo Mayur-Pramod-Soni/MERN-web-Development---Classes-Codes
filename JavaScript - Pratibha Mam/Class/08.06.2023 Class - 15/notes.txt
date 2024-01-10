@@ -1,0 +1,61 @@
+
+data abstraction
+
+two concept are appl data abbsraction:
+
+1. abstract class 
+2. abstract method
+
+
+note : we cant create instance of an abstrct class
+
+
+DOM :
+
+DOM is stands for document object model
+this concept is used for interact with interface,
+
+these are of following :
+document.getElementById()
+document.getElementByName()
+document.getElementByClassName()
+document.getElementByTagName()
+etc...
+
+
+Event :
+    is used for perfornm dynamic type of task.
+
+
+    these are of following type:
+     1 onclick event
+     2 onChange
+     3 onSubmit
+     4 onkeypress
+     5 onkeyup
+     6 onkeydown
+     7 onmouseover
+     8 onmouseout
+
+
+     1 onclick : this is perform task when we click
+        is use for call method
+
+        syntax:
+        onclick = "methodName()"
+
+        Q1 wap to change bg color ,accc to user
+        Q2 wap to change counter value as increment when we clic on button
+
+
+    2. onChange : 
+            this event perform task when we change values
+            by the help of select and option getElementByTagName
+
+
+            onChange= "methodName()"
+
+    Q3 wap to change content size acc to selection
+
+
+

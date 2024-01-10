@@ -1,0 +1,62 @@
+<script>
+
+
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    fetch("http://localhost:3000/records", requestOptions)
+        .then(response => {return response.json()})
+        .then(result => {
+            document.write(`<center><table border='1'`)
+            result.forEach((e) => {
+                document.write(`<tr><td><img style='hieght:70px; width:70px' src='https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-1/512/user_login_man-1024.png' /></td><td>
+                ${e.username}</td><td>${e.Email}</td><td>${e.password}</td><td><button id="Delete">Delete</td></tr>`)
+
+                })
+
+                document.write(`</table></center>`)
+        
+    })
+    .catch(error => console.log('error', error));
+
+    
+    $(document).ready(function(){
+        $("#delete").click(function(){
+            var d = $("#Delete").val()
+            var n = $("#name").val()
+            var e = $("#email").val()
+            var p = $("#password").val()
+            alert(n+" "+e+" "+p)
+
+            var myHeaders = new Headers();
+myHeaders.removeData("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "Delete":d,
+  "username": n,
+  "password": p,
+  "Email": e
+  
+});
+
+
+var requestOptions = {
+  method: 'DELETE',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://localhost:3000/records", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+        
+     })
+})
+
+</script>
+<input type="button" id="Delete">
+<button></button>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- <p class="card" style="color: red;background-color: aqua;">Welcome 0</p> -->
+    <p class="card ">Welcome1</p>
+    <p class="card ">Welcome2</p>
+    <p class="card">Welcome3</p>
+    <p class="card">Welcome4</p>
+    <p class="card ">Welcome6</p>
+    <p class="card ">Welcome7</p>
+    <p class="card ">Welcome8</p>
+    <!-- <p class="card" style="color: black;background-color: blueviolet;">Welcome5</p> -->
+
+     <script>
+        var d = document.getElementsByClassName("card")
+        console.log(d)
+        // d[0].innerHTML = "Hello World"
+        // d[d.length - 1].innerHTML = "Good Day" // due to same class name ( card ) we have to find length
+
+        for(i=0;i<d.length;i++)
+        
+        {
+            if(i%2==0)
+            {
+                d[i].style.color="Orange"
+            }
+            else{
+                d[i].style.color="green"
+            }
+        }
+
+    </script>
+
+     
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

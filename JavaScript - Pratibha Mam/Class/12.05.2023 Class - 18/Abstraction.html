@@ -1,0 +1,18 @@
+<script>
+    class Ex1
+    {
+        num1 = 90 ;
+        constructor(num1) // num 1 is pass the value to constructor 
+        {
+            document.write(this.num1+" "+num1);
+
+            if (this.constructor == Ex1 )
+            {
+                throw Error("Can't Create Instance");
+            }
+        }
+      
+    }
+    var o = new Ex1("Hello");
+    console.log(o.num1);
+</script>

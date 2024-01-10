@@ -1,0 +1,21 @@
+<script src="https://code.jquery.com/jquery-3.7.0.js" 
+integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+ crossorigin="anonymous"></script>
+
+<script>
+    var data1 = [1,2,5,45,65,4,5,78,98,101,108]
+    let max = data1[0]
+    $(document).ready(function(){
+        data1.forEach((data,index)=>{
+           if(data>max)
+           {
+            max = data;
+           }
+           else{
+            max = max;
+           }
+        })
+        document.write(max)
+
+    })
+</script>

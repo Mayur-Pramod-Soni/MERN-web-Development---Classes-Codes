@@ -1,0 +1,46 @@
+<script>
+
+// Hieraracical series
+
+    class Bank
+    {
+        info()
+        {
+            return Math.round(Math.random()*10000)
+        }
+    }
+    class Googlepay extends Bank
+    {
+        inf()
+        {
+            document.write(`Code provide by Bank is ${super.info()}<br>Servic by Google Pay`)
+        }
+    }
+    class Phonepay extends Bank
+    {
+        
+        inf()
+        {
+            document.write(`Code provide by Bank is ${super.info()}<br>Service by Phone Pay`)
+        }
+    } 
+
+    var stp = prompt("Enter G for Google Pay , Enter P for Phonepay ")
+    //var sto = prompt("Enter P for Google Pay , Enter P for Phonepay ")
+
+    var g = new Googlepay()
+    var h = new Phonepay() 
+    if(stp=='G'|| stp=='g')
+    {
+        g.inf()
+    }
+    else if(stp=='P' || stp == 'p')
+    {
+        h.inf()
+    }
+    else
+    {
+        alert("Wrong Input")
+
+    }
+</script>

@@ -1,0 +1,24 @@
+<script>
+
+
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    fetch("http://localhost:3000/records", requestOptions)
+        .then(response => {return response.json()})
+        .then(result => {
+            document.write(`<center><table border='1'`)
+            result.forEach((e) => {
+                document.write(`<tr><td><img style='hieght:70px; width:70px' src='https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-1/512/user_login_man-1024.png' /></td><td>
+                ${e.username}</td><td>${e.Email}</td><td>${e.password}</td></tr>`)
+
+                })
+
+                document.write(`</table></center>`)
+        
+    })
+    .catch(error => console.log('error', error));
+
+</script>

@@ -1,0 +1,42 @@
+01 - How many types of JS? 
+
+02 - How many type of selector in html?
+
+03 -  Heading tag and bold is different? 
+      yes /  no 
+
+04 -  Padding and margin are same....
+      yes / no 
+
+05  - How mony type of css.
+
+06 -  Can we start heading tag from Ho ;
+       (Y/N). 
+
+07 -  withadusing table that can be archive property table layout by tr tag. (You / no )
+
+08. -  without using src Can we we set ing (Yes/NG) 
+
+09 - document get element by Class Nome() this method is valid or nat (valid / invalid)
+
+$10 -  document.write and document show() both are method (yes/no)
+
+Q11 -  0[] = [2,3,4] at[0] + a[0] ....? (a -4 , b-5, c. Error)
+
+Q12  - ["c", "C+", "Java"], show last element given on in Single line.
+
+Q13 -  which method is use for convert into capital letter in string. 
+
+Q14 -  Can be call multiple id using single document.getElementByID()
+
+Q15 - Explain about pop with practical using a ["row", "seeto", "genta"] 
+
+Q16 Create page for shaw 1 to 10 Counting using do while loop in JS .
+
+017. Create Page with 4 ancher tags 
+     1. Instagram 2. facebook.
+     3. email  4. youtube.
+
+and open page An. new tag. 
+
+Q18 - Print date time and  print of 5 times.

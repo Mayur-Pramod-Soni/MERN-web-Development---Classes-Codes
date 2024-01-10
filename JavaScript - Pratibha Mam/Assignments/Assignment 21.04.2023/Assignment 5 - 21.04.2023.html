@@ -1,0 +1,37 @@
+<!-- w a p to print prime No -->
+<html>
+
+<head>
+    <script>
+        var n = parseInt(prompt("enter a no."));
+        var flag = 0;
+        var i = 2;
+        document.write("Factorial are as of No. : ", +n);
+        while (i < n) {
+
+
+            if (n % i != 0) {
+                flag;
+            }
+
+            else {
+                flag++;
+                break;
+            }
+
+
+            i++;
+
+        }
+        if (flag == 0) {
+            document.write("<h3 style='color:green' >Given No is Prime No " + n + "</h3>")
+        }
+        else {
+            document.write("<h3 style='color:green' >Given No is Not a Prime No " + n + "</h3>")
+        }
+
+
+    </script>
+</head>
+
+</html>

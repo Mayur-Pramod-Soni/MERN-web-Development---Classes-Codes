@@ -1,0 +1,14 @@
+arrow :---
+    
+    const hello=()=>{
+
+    }
+
+    const hello=function()
+    {
+
+    }
+
+Que. -- write a example to create two methods based on arrow concept 
+        1st is default , 
+        2st is parameter.

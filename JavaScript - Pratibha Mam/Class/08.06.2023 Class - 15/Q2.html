@@ -1,0 +1,25 @@
+<!-- Q2 wap to change counter value as increment when we clic on button -->
+
+<body>
+    <h1 id="count">0</h1>
+    <button onclick="inc()">Click me</button>
+</body>
+
+<script>
+    var c = 1
+    function inc()
+    {
+        
+        if(c<=10)
+        {
+            document.getElementById("count").innerHTML=c++
+        }
+        else
+        {
+            alert("limit done pleace Reload page")
+        }
+
+    }
+</script>
+
+

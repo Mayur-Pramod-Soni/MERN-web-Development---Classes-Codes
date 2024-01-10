@@ -1,0 +1,18 @@
+<body>
+    <select name="" id="s" onchange="load()">
+        <option value="">Select option</option>
+        <option value="12px">12px</option>
+        <option value="20px">20px</option>
+        <option value="40px">40px</option>
+        <option value="100px">100px</option>
+    </select>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nobis ullam illo magni? Quasi nemo praesentium laborum eum animi doloremque eligendi, rerum quas, rem molestias architecto impedit laboriosam, pariatur autem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ullam cupiditate culpa dolor voluptate iste maxime facilis soluta itaque exercitationem, nemo laborum tempore officia id? Facilis esse consequatur aliquam fugit?</p>
+</body>
+
+<script>
+    function load()
+    {
+        var size = document.getElementById("s").value;
+        document.getElementById("p1").style.fontSize=size;
+    }
+</script>

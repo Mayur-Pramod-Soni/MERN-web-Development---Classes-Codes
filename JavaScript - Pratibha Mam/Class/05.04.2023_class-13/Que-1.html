@@ -1,0 +1,38 @@
+<script>
+    class Step1
+    {
+        verify()
+        {
+            var otp=Math.round(Math.random()*10000)
+            alert(otp)
+            return otp
+
+        }
+    }
+
+    class Step2 extends Step1
+    {
+        verify()
+        {
+            var ot=super.verify()
+            var v=parseInt(prompt("enter the first one "))
+            if(v==ot)
+            {
+                alert("step1 verification success")
+                var e=Math.round(Math.random()*10000)
+                alert(e)
+                var ot1= parseInt(prompt("enter second otp verification"))
+                if(e==ot1)
+                {
+                    document.write('<img width="300px" height="300px" src="https://www.newstrail.com/wp-content/uploads/2022/12/Email-Verification-Software-Market.png"/>')
+                }
+            }
+            else
+            {
+                document.write('<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxcgY0CUZAKCQTWx5Oe7u6_HDSzMEJ0M33Jg&usqp=CAU"/>')
+            }
+        }
+    }
+    var o=new Step2()
+    o.verify()
+</script>

@@ -1,0 +1,23 @@
+<script>
+
+    function a()
+    {
+        console.log("Hello a Method-a")
+    }
+
+    function b()
+    {
+        console.log("Hello a Method-b ")
+    }
+   // a()
+ 
+   setTimeout(function(){
+    a()
+   })
+    // both method can be used and same .
+    setTimeout(()=>{
+        a()
+    },20000
+    )
+    b()
+</script>

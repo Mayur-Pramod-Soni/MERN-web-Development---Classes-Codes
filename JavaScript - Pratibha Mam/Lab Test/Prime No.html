@@ -1,0 +1,26 @@
+<script>
+    let n ;
+    let flag = 0;
+    document.writeln(2);
+    for(let i = 3; i<=20 ; i++)
+    {
+        for(let j = 2 ; j<i ; j++)
+        {
+            if( i % j == 0)
+            {
+                flag = 1 ;
+                break;
+            }
+            else 
+            {
+                n = i ; 
+                flag = 0;
+            }
+        }
+        if(flag == 0)
+        {
+            
+            document.writeln(n)
+        }
+    }
+</script>

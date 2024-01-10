@@ -1,0 +1,31 @@
+<script>
+    class A 
+    {
+        h1()
+        {
+            document.write("Class Perimeter<br>")
+        }
+    }
+    class B extends A
+    {
+        h2()
+        {
+            document.write("Class B ectends A<br> ")
+        }
+    }
+    class C extends A
+    {
+        h2()
+        {
+            document.write("Class C extends A<br>")
+        }
+    }
+    var p1 = new B();
+    p1.h1();
+    p1.h2();
+
+    var p2 = new C();
+    p2.h2();
+
+    
+</script>

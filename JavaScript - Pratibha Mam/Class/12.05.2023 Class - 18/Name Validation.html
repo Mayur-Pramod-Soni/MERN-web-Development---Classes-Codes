@@ -1,0 +1,18 @@
+<form action="" name="frm" onsubmit="return val()">
+    <input type="text" name="fname" required>
+    <input type="submit" value="Go">
+</form>
+<script>
+    function val()
+    {
+        var f = document.frm.fname.value;
+        var data = f.splite(" ")
+        if(f.toUppercase()!=f || data.length!=1 )
+        {
+            alert("Please Enter Only Capital Laters");
+            return false;
+        }
+        return true;
+
+    }
+</script>

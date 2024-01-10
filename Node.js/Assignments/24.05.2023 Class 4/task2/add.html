@@ -1,0 +1,73 @@
+<script src="https://code.jquery.com/jquery-3.7.0.js" 
+integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" 
+crossorigin="anonymous"></script>
+
+<a href="showuser.html">Show-User</a>
+<a href="add.html">Add-Users</a>
+
+<br>
+<hr>
+<br>
+
+<center>
+    <table border="1">
+        <tr>
+            <td>Name</td><td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Email</td><td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>password</td><td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" id="add"></td>
+        </tr>
+    </table>
+</center>
+
+<script>
+    $(document).ready(function(){
+        $("#add").click(function(){
+            var n = $("#name").val()
+            var e = $("#email").val()
+            var p = $("#password").val()
+            alert(n+" "+e+" "+p)
+
+            var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+ 
+  "username": n,
+  "password": p,
+  "Email": e
+  
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://localhost:3000/records", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+        })
+    })
+
+//     var myHeaders = new Headers();
+// myHeaders.append("Content-Type", "application/json");
+
+// var raw = JSON.stringify({
+//   "id": 2,
+//   "username": "Arpan",
+//   "password": "12345abcde",
+//   "Email": "arpansoni33@gmail.com"
+// });
+
+
+</script>

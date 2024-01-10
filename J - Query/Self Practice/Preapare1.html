@@ -1,0 +1,42 @@
+<script src="https://code.jquery.com/jquery-3.7.0.js" 
+integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" 
+crossorigin="anonymous">
+</script>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reprehenderit eius, nostrum dolorem molestiae ex.
+    Nobis odio consectetur ut repudiandae ab veniam accusantium et dolorum maxime, totam deleniti qui, eius atque. Sequi
+    aut consequuntur molestias veritatis beatae repudiandae, explicabo pariatur, labore natus velit error. Corrupti
+    assumenda amet vel qui soluta.</p>
+    <p id="q"></p>
+<script>
+    $(document).ready(function () {
+        // document.writeln("Hello Mayur Good Morning")
+
+        $('p').css("background-color","lightblue");
+
+        let flag = 0;
+        // document.write("2 ")
+        $("#q").text("2")
+        for ( i = 3; i < 20; i++) {
+            for ( h = 2; h < i; h++) {
+                if (i % h == 0) {
+                    flag = 1;
+                    break;
+                }
+                else {
+                   
+                    flag = 0;
+                    r = i ;
+                }
+            }
+            if (flag == 0)
+            {
+                // document.write(i + " ")
+                $("#r").text(r +" ");
+                  //document.write(i + " ")
+            }
+        }
+
+    })
+
+
+</script>

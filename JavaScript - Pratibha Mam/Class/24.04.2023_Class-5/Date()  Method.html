@@ -1,0 +1,21 @@
+<script>
+
+    var m = new Date();
+
+
+    console.log(m)
+    console.log(m.getDate())
+    console.log(m.getFullYear())
+    console.log(m.getMonth()) // Month start from 1
+    // console.log(m.setFullYear((year:2021, month:05, date:22): number))
+    console.log(m)
+
+    var year = m.getFullYear();
+    if (year % 4 == 0) {
+        document.write("Leap Year");
+    }
+    else {
+        document.write("Not a Leap Year!");
+    }
+
+</script>

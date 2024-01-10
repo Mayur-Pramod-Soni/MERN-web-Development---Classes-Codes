@@ -1,0 +1,36 @@
+<script>
+    //non astract class
+class Hello
+{
+    constructor()
+    {
+        console.log("Sucess")
+    }
+}
+
+// abstract class becouse if concepta apply for abstract cocept 
+    class Demo{
+        constructor()
+        {
+            if(this.constructor==Demo)
+            {
+                throw Error("Cant creae instance")
+            }
+            console.log("working")
+        }
+        h1()
+        {
+            document.write("Hello user")
+        }
+    }
+    // this class is non abstract class is used for call abstract class 
+    class A extends Demo
+    {
+
+    }
+
+    var t = new Hello();
+   // var q = new Demo();
+   var w = new A();
+   w.h1();
+</script>

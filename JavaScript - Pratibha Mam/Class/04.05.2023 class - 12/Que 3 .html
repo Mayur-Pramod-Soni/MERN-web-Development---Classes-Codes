@@ -1,0 +1,21 @@
+<script>
+    class Ex
+    {
+        #fname = ""
+        #lname = ""
+        constructor(f,l)
+        {
+            this.#fname  = f;
+            this.#lname = l ;
+
+        }
+        show()
+        {
+            return this.#fname + "" + this.#lname;
+        }
+    }
+    var n1 = new Ex ("Raman ", "Pratibha")
+    document.write(n1.show()+"<br>")
+    var n2 = new Ex ("Ram ", "Seeta")
+    document.write(n2.show()+"<br>")
+</script>

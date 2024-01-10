@@ -1,0 +1,49 @@
+<script src="https://code.jquery.com/jquery-3.7.0.js" 
+integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+ crossorigin="anonymous"></script>
+ <body>
+    <style>
+        .class
+        {
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+    
+    <center>
+        <div class="class">
+            <h3>Log-In Page</h3>
+            <table>
+                <form>
+                    <tr id="t1">
+                        <td>UserName :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>PassWord :</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button>Login </button><button>Clear </button><button>Register</button>
+                    </tr>
+                </form>
+                
+            </table>
+            
+        </div>
+        <button id="up">Hide/show</button></td>
+    </center>
+ </body>
+ <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".class").slideDown(5000)
+        })
+        $("#up").click(function(){
+            $(".class").slideUp(5000)
+        })
+
+     })
+ </script>

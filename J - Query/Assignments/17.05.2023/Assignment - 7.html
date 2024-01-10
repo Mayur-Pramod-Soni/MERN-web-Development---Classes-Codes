@@ -1,0 +1,60 @@
+
+<!-- wap to create login form and its show from top to bottom when we click on button. -->
+
+<script src="https://code.jquery.com/jquery-3.7.0.js" 
+integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" 
+crossorigin="anonymous"></script>
+<head style="background-color: coral;">
+<body>
+ <style>
+    .store
+    {
+        height: 150px;
+        width: 300px;
+        background-color: rgb(25, 108, 198);
+        display: none;
+    }
+</style>
+
+<center>
+    <div class="store">
+        <h3>Log-In Page</h3>
+        <table>
+            <form action="">
+                <tr id="t1">
+                    <td>UserName :</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>PassWord :</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button>Login</button><button id="up">Hide</button></td>
+                    
+                </tr>
+        
+            </form>
+        </table>
+    </div>
+    <button>Down</button>
+</center>
+
+ </body>   
+
+
+<script>
+     $(document).ready(function(){
+        $("button").click(function(){
+            $(".store").slideDown(5000)
+        })
+        $("#up").click(function(){
+            $(".store").slideUp(5000)
+        })
+
+     })
+</script>
+</head>
+
+

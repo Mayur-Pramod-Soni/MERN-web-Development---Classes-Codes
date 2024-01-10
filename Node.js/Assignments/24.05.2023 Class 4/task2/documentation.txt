@@ -1,0 +1,13 @@
+user add 
+   name 
+   password 
+   email
+
+show user :
+
+show all infoemaation with common image for  all
+
+home page :
+ show 2 buttons 
+ 1) add users 
+ 2) show users

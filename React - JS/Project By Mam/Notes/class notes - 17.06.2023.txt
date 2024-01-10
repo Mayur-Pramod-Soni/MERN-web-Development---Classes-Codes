@@ -1,0 +1,93 @@
+Easy Steps for Notes:--
+
+	React Js -- Components
+	React JS -- Routing 
+
+Json-Server -- 
+		Course
+			course name
+			icon
+			description
+			url
+...............................
+
+bootstrap install :-
+
+npm install bootstrap
+
+npm install react-router-dom
+
+npm install json-server
+
+color picker extensions
+................................
+
+Steps for json :---
+
+1. in react js ,first we install json server for json type of task.
+
+in json keys are strict type 
+
+2. in react js , we create Filename .json file for perform json type of task .
+
+3. first we create Course.json file for contain 5 records .
+
+	course  name 
+	course id 
+	course icon 
+	course desc
+	course url
+
+	php , react , python , java , android
+
+
+we create this file 
+
+.....................
+
+after connect json file , we connect with raect js component 
+
+so, import json file inside react js component
+
+syntax:---
+
+import TargetName from './filename.json'
+
+
+Note:---
+
+i wamt to show this record by card component from bootstrap .
+
+
+
+
+...............................................................
+
+Routing :---
+
+first install 
+
+1.  npm install react-router-dom
+
+   in which react router dom we get ----
+			1. BrowserRouter 
+			2. Routes
+			3. Route
+			4. Link
+
+App.js :-- to connect 
+
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
+Header.js:--- to connect
+
+import {Link} from 'react-router-dom'
+
+Home.js
+Images.js
+
+Note:---- We can Show landing page( Which is show first on upi or web page ) by router concept , according to first Route 
+
+
+
+

@@ -1,0 +1,27 @@
+<script>
+    class A 
+    {
+        h1()
+        {
+        document.write("Class A <br>")
+        }
+    }
+    class B extends A
+    {
+        h2()
+        {
+            document.write("Class B <br>")
+        }
+    }
+    class C extends B
+    {
+        h3()
+        {
+            document.write("Class C <br>")
+        }
+    }
+    var op = new C()
+    op.h3()
+    op.h2()
+    op.h1()
+</script>

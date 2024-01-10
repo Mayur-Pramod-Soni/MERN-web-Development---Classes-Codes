@@ -1,0 +1,15 @@
+<center>
+<div id="clock" style="height: 50px; width: 40%; background-color: coral; color: black;"></div>
+</center>
+<script>
+  
+  var d = new Date()
+  document.getElementById("clock").innerHTML=d;
+
+  setInterval(()=>{
+    var d = new Date()
+    document.getElementById("clock").innerHTML=d;
+  },1000
+  )
+   
+</script> 

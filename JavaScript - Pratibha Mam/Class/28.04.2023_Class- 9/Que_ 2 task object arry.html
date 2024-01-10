@@ -1,0 +1,26 @@
+<script>
+    var data = [
+        { n1: "Ram" },
+        { n1: "Sita" },
+        { n1: "Laxman" },
+        { n1: "UrmilA" },
+        { n1: "Suthkirthi" },
+        { n1: "Mandavi" },
+        { n1 :"Laxman"},
+        { n1 : "Bharat"}
+
+    ]
+
+    document.write("<table border='1'>")
+    for (i = 0; i < data.length; i++) {
+
+        document.write(`<tr><td> Hello User ${data[i].n1}</td></tr>`)
+    }
+
+    document.write("</table>")
+
+    for (i = 0; i < data.length; i++) {
+
+document.write(`<pre><h3> Hello User ${data[i].n1}</h3></pre>`)
+}
+</script>

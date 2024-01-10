@@ -1,0 +1,34 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "username": "Mayur",
+      "password": "1234abcd",
+      "Email": "ma987soni@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "Arpan",
+      "password": "12345abcde",
+      "Email": "arpansoni33@gmail.com"
+    },
+    {
+      "username": "jkjkk",
+      "password": "huhuuuh",
+      "Email": "p@gmail.com",
+      "id": 3
+    },
+    {
+      "username": "",
+      "password": "",
+      "Email": "",
+      "id": 4
+    },
+    {
+      "username": "",
+      "password": "",
+      "Email": "",
+      "id": 5
+    }
+  ]
+}

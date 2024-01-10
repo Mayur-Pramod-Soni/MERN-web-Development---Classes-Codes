@@ -1,0 +1,31 @@
+<script>
+class Service
+{
+    constructor()
+    {
+        if(this.constructor==Service)
+        {
+            
+            document.write("Pleace connect with service provider<br>")
+            throw Error("")
+        }
+    }
+    connect()
+    {
+        document.write("thanks for comecting with services provider<br>")
+    }
+}
+
+class Provider extends Service
+{
+    constructor()
+    {
+        document.write("Connected<br>")
+        document.write("<img style='height:50px; width= 40px' src='https://thumbs.gfycat.com/BothUnsightlyBeaver-max-1mb.gif'>")
+    }
+}
+
+var connectNow = new Provider()
+connectNow.connect()
+
+</script>

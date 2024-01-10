@@ -1,0 +1,114 @@
+Redux:----
+
+Why we use reduxe?
+
+because redux provide lots of features ie.- 
+
+1. Provider 
+2. Store
+3. Connect
+
+Note:-- We perform task based on redux by two package:
+
+1.redux : - we can use in another language also
+
+
+2.react-redux : - can't use with another language
+
+
+..................................
+
+Store:- 
+
+store is used for store data.
+this is inside redux .
+
+Note:-- we can't accesss store data directly , by Provider can we done this.
+
+
+import {Provider} from 'react-redux' 
+
+<Provider store={storage}>
+</Component>
+</Provider>
+
+Syntax :---  import{createStore} from 'redux'
+
+Connect:---- connect is use for access data provider by provider 
+
+
+import {connect}from 'react-redux'
+
+using this,we can target value .
+
+syntax :-
+
+mapStateToProps()
+{
+}
+
+connect(mapStateToProps)(components)
+......................................
+
+2. MEthods :- 
+
+increment , decrement 
+
+we passs daata by type from UI .
+
+
+
+
+
+this.props.dispatch({
+	return{
+	type:'ICREMENT'
+	}
+})
+
+
+Note:-- we dispatch data then it connect with reducer .
+
+<button Onclick={increment()}> + </button> 
+
+.............................................................
+
+Reducer Process:- 
+
+reducer contain store and action .
+
+state for update value 
+action for perform task .
+
+function reducer = (state,action)=>{
+
+}
+
+first paramenter for state and second parameter to 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

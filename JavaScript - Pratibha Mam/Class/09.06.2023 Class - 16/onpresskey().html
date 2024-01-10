@@ -1,0 +1,31 @@
+<!-- <input type="text" id="t1" onkeypress="load()"> -->
+<input type="text" id="t1" onkeyup="load()">
+<h1 id="message"></h1>
+<br>
+<!-- <input type="text" id="t2"> -->
+<br>
+
+<script>
+    var s = ["Ram","Seeta","pretu","Pankaj"]
+    function load()
+    {
+        var x1 = document.getElementById("t1").value; // value and innerhtml can be used value used when data fetch from text or filed
+        c = 0 ;
+        for(i = 0;i<s.length;i++)
+        {
+            if(x1==s[i][0])
+            {
+                c=1;
+                document.getElementById("message").innerHTML=s[i]
+                //alert("Suceess");
+            }
+            if (c == 0)
+            {
+                document.getElementById("message").innerHTML="This Result Not Found"
+                //alert("Fail");
+            }
+        }
+        //alert(x1);
+        //document.getElementById("t2").value=x1; // one value behind from input user 
+    }
+</script>

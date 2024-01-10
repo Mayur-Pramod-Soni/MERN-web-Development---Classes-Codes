@@ -1,0 +1,22 @@
+<p id="t1">
+    In an object method, this refers to the object.
+    Alone, this refers to the global object.
+    In a function, this refers to the global object.
+    In a function, in strict mode, this is undefined.
+    In an event, this refers to the element that received the event.
+    Methods like call(), apply(), and bind() can refer this to any object.
+
+</p>
+<script>
+    var service={
+        changeFont:function(size,color)
+        {
+            document.getElementById("t1").style.fontSize= size+"px";
+            document.getElementById("t1").style.color=color;
+
+        }
+    }
+    var s = prompt("Enter Font Size Number")
+    var c = prompt("Enter Font Size")
+    service.changeFont(s,c)
+ </script>

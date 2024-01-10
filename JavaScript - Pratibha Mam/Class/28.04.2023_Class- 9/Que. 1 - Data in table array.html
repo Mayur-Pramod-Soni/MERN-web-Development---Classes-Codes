@@ -1,0 +1,22 @@
+<script>
+    var data = [
+        { n1: 10, n2: 90 },
+        { n1: 78, n2: 50 },
+        { n1: 34, n2: 78 }
+    ]
+    var sn1 =0 ;
+     var sn2 = 0;
+
+    document.write("<table border='1'>")
+    for (i = 0; i < data.length; i++)
+    {
+        sn1+=data[i].n1
+        sn2+=data[i].n2
+        
+        document.write(`<tr><td>${data[i].n1}</td>
+            <td>${data[i].n2}</td></tr>`)
+    }
+
+    document.write("</table>")
+    document.write(`<pre><h2>N1 : ${sn1}</h2><h2>N2 : ${sn2}</h2></pre>`)
+</script>

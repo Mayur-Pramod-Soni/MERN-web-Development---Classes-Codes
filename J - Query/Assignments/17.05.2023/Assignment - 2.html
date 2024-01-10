@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-3.7.0.js" 
+integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+ crossorigin="anonymous"></script>
+
+<script>
+    var data1 = ["Mayur","Arpan","Arijit","Sonu","Aakash","Akshay","Amritlal","Lala"]
+
+    $(document).ready(function(){
+        
+        // for( let i = 0 ; i< data.length ; i++)
+        // {
+        //      if (i%2 == 0)
+        //      {
+        //        document.write(data[i]+" ")               
+        //      }
+        // }    
+        data1.forEach((data,index)=>{
+          if(index % 2 == 0)
+          {
+            document.write(data1[index])
+          }
+        })    
+    })
+</script>
